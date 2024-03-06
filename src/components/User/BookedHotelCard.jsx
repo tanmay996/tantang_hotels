@@ -89,7 +89,7 @@ function BookedHotelCard(props) {
                             <div className=' text-end'>
                              <del className='me-3 fs-15 text-danger'>&#8377;{props.price}</del>
                              <span>&#8377;{props.price}</span>
-                            <button className='btn btn-primary d-block avail-btn'>Continue<i className="bi bi-calendar2-check ms-2"></i></button>
+                            <button className='btn btn-primary d-block avail-btn'>Continuee<i className="bi bi-calendar2-check ms-2"></i></button>
                             </div>
                             </div>  
                         </div>
