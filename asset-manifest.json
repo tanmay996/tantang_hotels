@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.ffbe7f5b.css",
-    "main.js": "/react-gh-pages/static/js/main.6312bdac.js",
+    "main.js": "/react-gh-pages/static/js/main.f2dabdf2.js",
     "static/js/453.e4482a76.chunk.js": "/react-gh-pages/static/js/453.e4482a76.chunk.js",
     "static/media/aboutbg.jpeg": "/react-gh-pages/static/media/aboutbg.e1709b7421ef239623b4.jpeg",
     "static/media/hotel1.jpeg": "/react-gh-pages/static/media/hotel1.4ba39521abb2fb6b8609.jpeg",
@@ -14,11 +14,11 @@
     "static/media/hotel3.jpeg": "/react-gh-pages/static/media/hotel3.5cb0c209fac35f7a52fe.jpeg",
     "index.html": "/react-gh-pages/index.html",
     "main.ffbe7f5b.css.map": "/react-gh-pages/static/css/main.ffbe7f5b.css.map",
-    "main.6312bdac.js.map": "/react-gh-pages/static/js/main.6312bdac.js.map",
+    "main.f2dabdf2.js.map": "/react-gh-pages/static/js/main.f2dabdf2.js.map",
     "453.e4482a76.chunk.js.map": "/react-gh-pages/static/js/453.e4482a76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffbe7f5b.css",
-    "static/js/main.6312bdac.js"
+    "static/js/main.f2dabdf2.js"
   ]
 }
