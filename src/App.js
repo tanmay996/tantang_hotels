@@ -21,13 +21,12 @@ function App() {
       <BrowserRouter>
       <div className='slidder-section container position-fixed  '>
          <Header />
-        <Navbar />
+         <Navbar />
       </div>
         <Routes>
           <Route path='/' element={<MainLayout/>}/>
           <Route path='/about-us' element={<AboutUs />}/>
           <Route path='/hotel' element={<Hotels />}/>
-          <Route path='/hotel/:hotelName' element={<BookHotel/>}/>
           <Route path='mytrip' element={<MyTrips />}/>
         </Routes>
       </BrowserRouter>
