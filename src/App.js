@@ -27,6 +27,7 @@ function App() {
           <Route path='/' element={<MainLayout/>}/>
           <Route path='/about-us' element={<AboutUs />}/>
           <Route path='/hotel' element={<Hotels />}/>
+          <Route path='/hotel/:hotelName' element={<BookHotel/>}/>
           <Route path='mytrip' element={<MyTrips />}/>
         </Routes>
       </BrowserRouter>

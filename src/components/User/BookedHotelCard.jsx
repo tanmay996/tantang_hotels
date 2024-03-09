@@ -52,11 +52,7 @@ function BookedHotelCard(props) {
     ]
   return (
     <div>
-          <About
-         word="Book"
-         word2="Your Hotel"
-         aboutpara="Sewa Apartemen Impian Anda. Ruang Nyaman, Hidup Bahagia. Temukan Apartemen Terbaik di Indonesia Bersama Kami!"
-          />
+       
          <div className='hotel-list spun_cotton p-3 p-md-5'>
             <div className='container'>
                 <div className='hotel-list-layout p-3 p-md-5'>
