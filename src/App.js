@@ -24,7 +24,7 @@ function App() {
          <Navbar />
       </div>
         <Routes>
-          <Route path='/tantang_house/' element={<MainLayout/>}/>
+          <Route path='/' element={<MainLayout/>}/>
           <Route path='/about-us' element={<AboutUs />}/>
           <Route path='/hotel' element={<Hotels />}/>
           <Route path='/hotel/:hotelName' element={<BookHotel/>}/>

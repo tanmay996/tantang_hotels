@@ -17,9 +17,13 @@ function HotelsCard(props) {
                       <div className='col-md-6'>
                         <div className=' h-100 d-flex flex-column justify-content-between'>
                             <div>
-                            <div className='hotel-name  d-flex align-items-center justify-content-between'>
+                            <div className='hotel-name  d-flex align-items-sm-center align-items-start justify-content-between'>
                               <span className=' text-capitalize text-lime_green fs-33 fw-semibold'>{props.name}</span>
-                              <span className='p-1 px-2 bg-dark-blue rounded-2 text-white'>{props.star} <i className="bi bi-star-fill"></i></span>
+                              <span className='d-flex text-white  bg-dark-blue p-1 px-2  rounded-2  align-items-center'>
+                              <span className='px-1'>{props.star}</span>
+
+                               <i className="bi bi-star-fill"></i>
+                              </span>
                             </div>
                             <div className='text-lime_green'>
                             <span className=' text-capitalize'>{props.city}</span> 
