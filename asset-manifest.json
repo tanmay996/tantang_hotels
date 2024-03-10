@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tantang_house/static/css/main.cb787ba4.css",
-    "main.js": "/tantang_house/static/js/main.05bcba8f.js",
-    "static/js/453.e4482a76.chunk.js": "/tantang_house/static/js/453.e4482a76.chunk.js",
-    "static/media/aboutbg.jpeg": "/tantang_house/static/media/aboutbg.e1709b7421ef239623b4.jpeg",
-    "static/media/hotel1.jpeg": "/tantang_house/static/media/hotel1.4ba39521abb2fb6b8609.jpeg",
-    "static/media/bootstrap-icons.woff?": "/tantang_house/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/hotel4.jpeg": "/tantang_house/static/media/hotel4.81861b39f8c69f4227c4.jpeg",
-    "static/media/bootstrap-icons.woff2?": "/tantang_house/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/hotel2.jpeg": "/tantang_house/static/media/hotel2.a0613efd18d6feebfbb6.jpeg",
-    "static/media/about-home-card3.jpeg": "/tantang_house/static/media/about-home-card3.b8cadb3031b8b52dba0e.jpeg",
-    "static/media/about-home-card1.jpeg": "/tantang_house/static/media/about-home-card1.1052f8da963ec6645e20.jpeg",
-    "static/media/hotel3.jpeg": "/tantang_house/static/media/hotel3.5cb0c209fac35f7a52fe.jpeg",
-    "index.html": "/tantang_house/index.html",
-    "main.cb787ba4.css.map": "/tantang_house/static/css/main.cb787ba4.css.map",
-    "main.05bcba8f.js.map": "/tantang_house/static/js/main.05bcba8f.js.map",
-    "453.e4482a76.chunk.js.map": "/tantang_house/static/js/453.e4482a76.chunk.js.map"
+    "main.css": "/static/css/main.fbe85fd3.css",
+    "main.js": "/static/js/main.46de5f78.js",
+    "static/js/453.e4482a76.chunk.js": "/static/js/453.e4482a76.chunk.js",
+    "static/media/aboutbg.jpeg": "/static/media/aboutbg.e1709b7421ef239623b4.jpeg",
+    "static/media/hotel1.jpeg": "/static/media/hotel1.4ba39521abb2fb6b8609.jpeg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/hotel4.jpeg": "/static/media/hotel4.81861b39f8c69f4227c4.jpeg",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/hotel2.jpeg": "/static/media/hotel2.a0613efd18d6feebfbb6.jpeg",
+    "static/media/about-home-card3.jpeg": "/static/media/about-home-card3.b8cadb3031b8b52dba0e.jpeg",
+    "static/media/about-home-card1.jpeg": "/static/media/about-home-card1.1052f8da963ec6645e20.jpeg",
+    "static/media/hotel3.jpeg": "/static/media/hotel3.5cb0c209fac35f7a52fe.jpeg",
+    "index.html": "/index.html",
+    "main.fbe85fd3.css.map": "/static/css/main.fbe85fd3.css.map",
+    "main.46de5f78.js.map": "/static/js/main.46de5f78.js.map",
+    "453.e4482a76.chunk.js.map": "/static/js/453.e4482a76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb787ba4.css",
-    "static/js/main.05bcba8f.js"
+    "static/css/main.fbe85fd3.css",
+    "static/js/main.46de5f78.js"
   ]
 }
