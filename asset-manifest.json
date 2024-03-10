@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tantang_house/static/css/main.cb787ba4.css",
-    "main.js": "/tantang_house/static/js/main.25cb2d43.js",
+    "main.js": "/tantang_house/static/js/main.05bcba8f.js",
     "static/js/453.e4482a76.chunk.js": "/tantang_house/static/js/453.e4482a76.chunk.js",
     "static/media/aboutbg.jpeg": "/tantang_house/static/media/aboutbg.e1709b7421ef239623b4.jpeg",
     "static/media/hotel1.jpeg": "/tantang_house/static/media/hotel1.4ba39521abb2fb6b8609.jpeg",
@@ -14,11 +14,11 @@
     "static/media/hotel3.jpeg": "/tantang_house/static/media/hotel3.5cb0c209fac35f7a52fe.jpeg",
     "index.html": "/tantang_house/index.html",
     "main.cb787ba4.css.map": "/tantang_house/static/css/main.cb787ba4.css.map",
-    "main.25cb2d43.js.map": "/tantang_house/static/js/main.25cb2d43.js.map",
+    "main.05bcba8f.js.map": "/tantang_house/static/js/main.05bcba8f.js.map",
     "453.e4482a76.chunk.js.map": "/tantang_house/static/js/453.e4482a76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb787ba4.css",
-    "static/js/main.25cb2d43.js"
+    "static/js/main.05bcba8f.js"
   ]
 }
