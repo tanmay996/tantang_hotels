@@ -1,55 +1,10 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
-import { useParams } from 'react-router-dom'
-import About from './About'
-import hotel1 from '../images/hotel1.jpeg'
-import hotel2 from '../images/hotel2.jpeg'
-import hotel3 from '../images/hotel3.jpeg'
-import hotel4 from '../images/hotel4.jpeg'
+import { useParams ,useNavigate} from 'react-router-dom'
+
 function BookedHotelCard(props) {
+    const history = useNavigate();
+    
     const { hotelName } = useParams();
-    const hotel_data = [
-      {
-        id:1,
-        htl_name:"Hotel flair Inn",
-        price :"3990",
-        rooms:4,
-        city:"goa",
-        star:4.1,
-        detail:"2.2 km from Baga Beach",
-        image:hotel1
-      },
-      {
-        id:2,
-        htl_name:"Forest Haven Resort",
-        price :"4999",
-        rooms:4,
-        city:"mumbai",
-        detail:" 4-5 minutes walk from Candolim Beach",
-        star:3.6,
-        image:hotel2
-      },
-      {
-        id:3,
-        htl_name:"iStayHotels",
-        price :"6999",
-        rooms:4,
-        city:"mumbai",
-        detail:"2-3 minutes walk from Candolim Beach",
-        star:4.6,
-        image:hotel3
-      },{
-        id:4,
-        htl_name:"Arena Beach Hotel",
-        city:"goa",
-        price :"2999",
-        detail:"4-5 minutes walk from Mandrem Beach",
-        rooms:4,
-        star:4.1,
-        image:hotel4
-      }
-  
-    ]
   return (
     <div>
        
@@ -58,7 +13,7 @@ function BookedHotelCard(props) {
                 <div className='hotel-list-layout p-3 p-md-5'>
                   <div className='hotel-img'>
                     <div className='row row-gap-4'>
-                      <div className='col-md-6 '>
+                      <div className='col-md-6 d-flex  align-items-center'>
                         <img alt="hotel1" height="300" width="500" src={props.image} className=' rounded-4'/>
                       </div>
                       <div className='col-md-6'>
@@ -78,9 +33,15 @@ function BookedHotelCard(props) {
                             </div>
                             
                             </div>
-                            <div className='bg_glade_green p-2 '>
+                            <div className=' p-2 '>
                               <span className='d-block text-capitalize fs-22'>Property highlights</span>
-                              
+                              <ul className=' list-unstyled properties'>
+                                <li><i className="bi bi-award"></i>{props.property1}</li>
+                                <li><i className="bi bi-award"></i>{props.property2}</li>
+                                <li><i className="bi bi-award"></i>{props.property3}</li>
+                                <li><i className="bi bi-award"></i>{props.property4}</li>
+
+                              </ul>
                             </div>
                             <div className='d-flex justify-content-around  justify-content-md-between align-items-md-end'>
                               <div>
@@ -89,7 +50,7 @@ function BookedHotelCard(props) {
                             <div className=' text-end'>
                              <del className='me-3 fs-15 text-danger'>&#8377;{props.price}</del>
                              <span>&#8377;{props.price}</span>
-                            <button className='btn btn-primary d-block avail-btn'>Continuee<i className="bi bi-calendar2-check ms-2"></i></button>
+                            <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button>
                             </div>
                             </div>  
                         </div>

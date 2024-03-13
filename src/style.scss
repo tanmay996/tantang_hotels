@@ -201,7 +201,9 @@ $bg_Glade_Green:#ebefe5;
     padding: 0.5rem 4rem 0.5rem 0.3rem;
     border-radius: 5px;
 }
-
+.properties li:nth-child(odd){
+    background-color: #ebefe5;
+}
 @media  (max-width:1199px){
     .container{
         max-width: 940px !important;

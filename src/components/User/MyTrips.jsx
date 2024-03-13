@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import About from './About'
 import hotel1 from '../images/hotel1.jpeg'
@@ -6,9 +6,11 @@ import hotel2 from '../images/hotel2.jpeg'
 import hotel3 from '../images/hotel3.jpeg'
 import hotel4 from '../images/hotel4.jpeg'
 import BookedHotelCard from './BookedHotelCard'
-
+import { useLocation } from 'react-router-dom';
 function MyTrips() {
-    const { hotelName } = useParams();
+  const location = useLocation();
+  const  {hotelName}  = location.state
+  console.log(hotelName)
   const hotel_data = [
     {
       id:1,
@@ -51,6 +53,9 @@ function MyTrips() {
     }
 
   ]
+//  function findDetails(name){
+//     return myData.find(obj=>obj.name)
+//  }
   return (
     <div>
          <About
@@ -58,11 +63,12 @@ function MyTrips() {
          word2="Your Hotel"
          aboutpara="Sewa Apartemen Impian Anda. Ruang Nyaman, Hidup Bahagia. Temukan Apartemen Terbaik di Indonesia Bersama Kami!"
           />
+    
      
       {
           
           hotel_data
-          .filter((item) =>hotelName == item.htl_name)
+          .filter((item) =>location.state == item.htl_name )
           .map((item) => (
            
               <BookedHotelCard 

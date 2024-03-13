@@ -11,7 +11,7 @@ function HotelsCard(props) {
                 <div className='hotel-list-layout p-3 p-md-5'>
                   <div className='hotel-img'>
                     <div className='row row-gap-4'>
-                      <div className='col-md-6 '>
+                      <div className='col-md-6 d-flex  align-items-center '>
                         <img alt="hotel1" height="300" width="500" src={props.image} className=' rounded-4'/>
                       </div>
                       <div className='col-md-6'>
@@ -31,11 +31,17 @@ function HotelsCard(props) {
                             </div>
                             
                             </div>
-                            <div className='bg_glade_green p-2 '>
+                            <div className='py-2'>
                               <span className='d-block text-capitalize fs-22'>Property highlights</span>
-                              
+                              <ul className=' list-unstyled'>
+                                <li><i className="bi bi-award"></i>{props.property1}</li>
+                                <li><i className="bi bi-award"></i>{props.property2}</li>
+                                <li><i className="bi bi-award"></i>{props.property3}</li>
+                                <li><i className="bi bi-award"></i>{props.property4}</li>
+
+                              </ul>
                             </div>
-                            <div className='d-flex justify-content-around  justify-content-md-between align-items-md-end'>
+                            <div className='d-flex justify-content-around  justify-content-md-between '>
                               <div>
                                 <span className="text-danger fw-bold">Only {props.rooms} room left at this price on our site</span>
                               </div>

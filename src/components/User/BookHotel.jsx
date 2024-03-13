@@ -19,7 +19,11 @@ function BookHotel(props) {
       city:"goa",
       star:4.1,
       detail:"2.2 km from Baga Beach",
-      image:hotel1
+      image:hotel1,
+      prope1:"Couple Friendly",
+      prope2:"Beach club",
+      prope3:"Restaurant",
+       prope4:"24-hour Room Service"
     },
     {
       id:2,
@@ -29,7 +33,11 @@ function BookHotel(props) {
       city:"mumbai",
       detail:" 4-5 minutes walk from Candolim Beach",
       star:3.6,
-      image:hotel2
+      image:hotel2,
+      prope1:"Couple Friendly",
+      prope2:"Beach club",
+      prope3:"Restaurant",
+       prope4:"24-hour Room Service"
     },
     {
       id:3,
@@ -39,7 +47,11 @@ function BookHotel(props) {
       city:"mumbai",
       detail:"2-3 minutes walk from Candolim Beach",
       star:4.6,
-      image:hotel3
+      image:hotel3,
+      prope1:"Couple Friendly",
+      prope2:"Beach club",
+      prope3:"Restaurant",
+       prope4:"24-hour Room Service"
     },{
       id:4,
       htl_name:"Arena Beach Hotel",
@@ -48,15 +60,18 @@ function BookHotel(props) {
       detail:"4-5 minutes walk from Mandrem Beach",
       rooms:4,
       star:4.1,
-      image:hotel4
+      image:hotel4,
+      prope1:"Couple Friendly",
+      prope2:"Beach club",
+      prope3:"Restaurant",
+       prope4:"24-hour Room Service"
     }
 
   ]
   return (
     <div>
       <About
-         word="Book"
-         word2="Your Hotel"
+         word={hotelName}
          aboutpara="Sewa Apartemen Impian Anda. Ruang Nyaman, Hidup Bahagia. Temukan Apartemen Terbaik di Indonesia Bersama Kami!"
           />
      
@@ -76,6 +91,10 @@ function BookHotel(props) {
               image={item.image} 
               rooms={item.rooms}
               price={item.price}
+              property1={item.prope1}
+              property2={item.prope2}
+              property3={item.prope3}
+              property4={item.prope4}
               />
           ))
          
