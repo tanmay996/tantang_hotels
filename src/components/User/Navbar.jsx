@@ -18,7 +18,7 @@ function Navbar() {
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 fs-15 ls-15 fw-600 ">  
           <li className="nav-item">
-            <Link className="nav-link text-white active" aria-current="page" to="/tantang_house/">HOME</Link>
+            <Link className="nav-link text-white active" aria-current="page" to="/">HOME</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link text-white" to="/about-us">ABOUT</Link>

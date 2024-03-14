@@ -1,16 +1,9 @@
 import React from 'react'
-import { useParams ,useNavigate} from 'react-router-dom'
 
-
-function BookedHotelCard(props) {
-    const history = useNavigate();
-    
-    const { hotelName } = useParams();
- 
+function MyTripCard(props) {
   return (
     <div>
-       
-         <div className='hotel-list spun_cotton p-3 p-md-5'>
+           <div className='hotel-list spun_cotton p-3 p-md-5'>
             <div className='container'>
                 <div className='hotel-list-layout p-3 p-md-5'>
                   <div className='hotel-img'>
@@ -35,25 +28,13 @@ function BookedHotelCard(props) {
                             </div>
                             
                             </div>
-                            <div className=' p-2 '>
-                              <span className='d-block text-capitalize fs-22'>Property highlights</span>
-                              <ul className=' list-unstyled properties'>
-                                <li><i className="bi bi-award"></i>{props.property1}</li>
-                                <li><i className="bi bi-award"></i>{props.property2}</li>
-                                <li><i className="bi bi-award"></i>{props.property3}</li>
-                                <li><i className="bi bi-award"></i>{props.property4}</li>
-
-                              </ul>
-                            </div>
+                          
                             <div className='d-flex justify-content-around  justify-content-md-between align-items-md-end'>
-                              <div>
-                                <span className="text-danger fw-bold">Only {props.rooms} room left at this price on our site</span>
-                              </div>
+                            <span className='fs-33'>Booked Successfully</span>
                             <div className=' text-end'>
                              <del className='me-3 fs-15 text-danger'>&#8377;{props.price}</del>
                              <span>&#8377;{props.price}</span>
                             {/* <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button> */}
-                            <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button>
                             </div>
                             </div>  
                         </div>
@@ -67,4 +48,4 @@ function BookedHotelCard(props) {
   )
 }
 
-export default BookedHotelCard
+export default MyTripCard

@@ -7,10 +7,11 @@ import hotel3 from '../images/hotel3.jpeg'
 import hotel4 from '../images/hotel4.jpeg'
 import BookedHotelCard from './BookedHotelCard'
 import { useLocation } from 'react-router-dom';
+import MyTripCard from './MyTripCard'
 function MyTrips() {
   const location = useLocation();
   const  {hotelName}  = location.state
-  console.log(hotelName)
+  // console.log(hotelName)
   const hotel_data = [
     {
       id:1,
@@ -63,7 +64,6 @@ function MyTrips() {
          word2="Your Hotel"
          aboutpara="Sewa Apartemen Impian Anda. Ruang Nyaman, Hidup Bahagia. Temukan Apartemen Terbaik di Indonesia Bersama Kami!"
           />
-    
      
       {
           
@@ -71,7 +71,7 @@ function MyTrips() {
           .filter((item) =>location.state == item.htl_name )
           .map((item) => (
            
-              <BookedHotelCard 
+              <MyTripCard 
               key={item.id} 
               id={item.id} 
               name={item.htl_name} 

@@ -11,8 +11,8 @@ import Hotels from './components/User/Hotels';
 import Header from './components/User/Header';
 import Navbar from './components/User/Navbar';
 import BookHotel from './components/User/BookHotel';
-import BookedHotelCard from './components/User/BookedHotelCard';
 import MyTrips from './components/User/MyTrips';
+
 
 function App() {
  
