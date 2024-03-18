@@ -8,52 +8,14 @@ import hotel4 from '../images/hotel4.jpeg'
 import BookedHotelCard from './BookedHotelCard'
 import { useLocation } from 'react-router-dom';
 import MyTripCard from './MyTripCard'
+import hotel_data from '../../ hotel_data.json'
+
 function MyTrips() {
   const location = useLocation();
+  alert(location.state)
   const  {hotelName}  = location.state
-  // console.log(hotelName)
-  const hotel_data = [
-    {
-      id:1,
-      htl_name:"Hotel flair Inn",
-      price :"3990",
-      rooms:4,
-      city:"goa",
-      star:4.1,
-      detail:"2.2 km from Baga Beach",
-      image:hotel1
-    },
-    {
-      id:2,
-      htl_name:"Forest Haven Resort",
-      price :"4999",
-      rooms:4,
-      city:"mumbai",
-      detail:" 4-5 minutes walk from Candolim Beach",
-      star:3.6,
-      image:hotel2
-    },
-    {
-      id:3,
-      htl_name:"iStayHotels",
-      price :"6999",
-      rooms:4,
-      city:"mumbai",
-      detail:"2-3 minutes walk from Candolim Beach",
-      star:4.6,
-      image:hotel3
-    },{
-      id:4,
-      htl_name:"Arena Beach Hotel",
-      city:"goa",
-      price :"2999",
-      detail:"4-5 minutes walk from Mandrem Beach",
-      rooms:4,
-      star:4.1,
-      image:hotel4
-    }
 
-  ]
+  // console.log(hotelName)
 //  function findDetails(name){
 //     return myData.find(obj=>obj.name)
 //  }
@@ -82,7 +44,8 @@ function MyTrips() {
               rooms={item.rooms}
               price={item.price}
               />
-          ))
+          )
+          )
          
          
         }

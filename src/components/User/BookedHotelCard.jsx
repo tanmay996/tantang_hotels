@@ -6,7 +6,7 @@ function BookedHotelCard(props) {
     const history = useNavigate();
     
     const { hotelName } = useParams();
- 
+    alert(hotelName)
   return (
     <div>
        

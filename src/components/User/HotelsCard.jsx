@@ -12,7 +12,7 @@ function HotelsCard(props) {
                   <div className='hotel-img'>
                     <div className='row row-gap-4'>
                       <div className='col-md-6 d-flex  align-items-center '>
-                        <img alt="hotel1" height="300" width="500" src={props.image} className=' rounded-4'/>
+                        <img alt={props.image} height="300" width="500" src={props.image} className=' rounded-4'/>
                       </div>
                       <div className='col-md-6'>
                         <div className=' h-100 d-flex flex-column justify-content-between'>
