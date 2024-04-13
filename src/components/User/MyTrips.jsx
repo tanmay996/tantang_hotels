@@ -10,27 +10,32 @@ import { useLocation } from 'react-router-dom';
 import MyTripCard from './MyTripCard'
 import hotel_data from '../../ hotel_data.json'
 
-function MyTrips() {
+function MyTrips({alltrips}) {
   const location = useLocation();
-  alert(location.state)
-  const  {hotelName}  = location.state
+  // alert(location.state)
+  // const  {hotelName}  = location.state
 
   // console.log(hotelName)
 //  function findDetails(name){
 //     return myData.find(obj=>obj.name)
 //  }
+console.log(alltrips,"trip")
+
   return (
     <div>
          <About
-         word="Book"
-         word2="Your Hotel"
+         word="My"
+         word2="Trips"
          aboutpara="Sewa Apartemen Impian Anda. Ruang Nyaman, Hidup Bahagia. Temukan Apartemen Terbaik di Indonesia Bersama Kami!"
           />
      
-      {
-          
-          hotel_data
-          .filter((item) =>location.state == item.htl_name )
+      {      
+          // alltrips.length > 0 ? 
+
+          alltrips.map((items)=>
+            hotel_data.filter(
+              (item)=>item.htl_name===items
+            )
           .map((item) => (
            
               <MyTripCard 
@@ -46,8 +51,12 @@ function MyTrips() {
               />
           )
           )
-         
-         
+        )
+        
+          // :
+          // <h1>
+          //   Your cart is empty
+          // </h1>
         }
     </div>
   )

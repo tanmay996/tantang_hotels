@@ -12,10 +12,16 @@ import Header from './components/User/Header';
 import Navbar from './components/User/Navbar';
 import BookHotel from './components/User/BookHotel';
 import MyTrips from './components/User/MyTrips';
+import { useState } from 'react';
 
 
 function App() {
- 
+const [trip,setTrip] = useState([])
+const addtotrip = (product) =>{
+  // console.log(product,"app")
+    setTrip([...trip,product])
+    console.log(trip)
+ }
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,8 +33,8 @@ function App() {
           <Route path='/tantang_house' element={<MainLayout/>}/>
           <Route path='/about-us' element={<AboutUs />}/>
           <Route path='/hotel' element={<Hotels />}/>
-          <Route path='/hotel/:hotelName' element={<BookHotel/>}/>
-          <Route path='mytrip' element={<MyTrips />}/>
+          <Route path='/hotel/:hotelName' element={<BookHotel addtotrip={addtotrip}/>}/>
+          <Route path='/mytrip' element={<MyTrips alltrips={trip} />}/>
         </Routes>
       </BrowserRouter>
     </div>

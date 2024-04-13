@@ -6,7 +6,7 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-md container ">
   <div className="container px-0">
-    <Link className="navbar-brand text-white" to="/"><img src={frame} alt='logo'/>HOUSE.</Link>
+    <Link className="navbar-brand text-white" to="/tantang_house"><img src={frame} alt='logo'/>HOUSE.</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span className="navbar-toggler-icon"></span>
     </button>

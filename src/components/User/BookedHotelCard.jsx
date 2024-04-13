@@ -1,12 +1,12 @@
 import React from 'react'
-import { useParams ,useNavigate} from 'react-router-dom'
+import { useParams ,useNavigate, Link} from 'react-router-dom'
 
 
 function BookedHotelCard(props) {
     const history = useNavigate();
     
     const { hotelName } = useParams();
-    alert(hotelName)
+   
   return (
     <div>
        
@@ -53,7 +53,8 @@ function BookedHotelCard(props) {
                              <del className='me-3 fs-15 text-danger'>&#8377;{props.price}</del>
                              <span>&#8377;{props.price}</span>
                             {/* <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button> */}
-                            <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button>
+                            {/* <button className='btn btn-primary d-block avail-btn' onClick={ () => history('/mytrip',{ state:hotelName})}>Continuee<i className="bi bi-calendar2-check ms-2"></i></button> */}
+                          
                             </div>
                             </div>  
                         </div>
